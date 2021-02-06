@@ -76,7 +76,7 @@ async function doSearch(search) {
     var getUVI = `http://api.openweathermap.org/data/2.5/uvi?lat=${lat}&lon=${lon}&appid=c2345a6296a12669c7fc5e4a4fbb549c`
     var fiveDay = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=metric&appid=c2345a6296a12669c7fc5e4a4fbb549c`
     weatherData = await fetch(fiveDay).then(r => r.json());
-    uviData = await fetch(getUVI).then(r=>r.json())
+    uviData = await fetch(getUVI).then(r=>r.json());
     uvi = uviData.value
     today = weatherData.current
     showSearch()
