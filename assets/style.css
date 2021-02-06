@@ -1,0 +1,17 @@
+
+    p{
+        font-size: 12px;
+    }
+#forcastCards{
+    background-color: lightblue;
+}
+
+    h1{
+        justify-content: center;
+    }
+    body{
+        background-color: lightgray;
+    }
+#currentWeather{
+    background-color: gray;
+}
