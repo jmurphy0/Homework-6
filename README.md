@@ -5,3 +5,5 @@ Weather dashboard displays the current and forcasted weather for the city determ
 
 ![alt text](assets/hmwk6.mov)
 
+github repo:https://github.com/jmurphy0/Homework-6.git
+iso link: https://jmurphy0.github.io/Homework-6/
