@@ -97,8 +97,8 @@ function showCurrent() {
             <h2>${todayDate}<h2>
             <img src='http://openweathermap.org/img/wn/${weatherData.current.weather[0].icon}@2x.png' alt='no icon' />
 
-            <h4>Temperature: ${today['temp']}</h4>
-            <h4>Humidity: ${today['humidity']}</h4>
+            <h4>Temperature: ${today['temp']}°c</h4>
+            <h4>Humidity: ${today['humidity']}%</h4>
             <h4>Wind Speed:${Math.round((today['wind_speed'])*3.6)} KPH</h4>
             <h4>UV index:
                 <span class="badge ${
@@ -123,7 +123,7 @@ $('#forcast').html('')
         <h6>${moment.unix(weatherData.daily[i].dt).format("dddd, MMM Do YYYY")}<h6>
         <div class="card-body" id ='futureWeather'style='font-size=12px' col-mb-auto>
             <img src='http://openweathermap.org/img/wn/${weatherData.daily[i].weather[0].icon}@2x.png' alt='no icon' />
-            <p>Temperature: ${weatherData.daily[i].temp.day}</p>
+            <p>Temperature: ${weatherData.daily[i].temp.day} °c</p>
             <p>Humidity: ${weatherData.daily[i].humidity}%</p>
             <p>Wind Speed: ${Math.round((weatherData.daily[i].wind_speed)*3.6)} KPH</p>
         </div>
